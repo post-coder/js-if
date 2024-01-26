@@ -1,28 +1,22 @@
+// chiediamo a due utenti la loro età
+// controlliamo chi sia il più grande
 
-// se l'utente è maggiorenne visualizziamo un saluto pazzerello,
-// altrimenti salutiamo in maniera matura
-
-const age = prompt("Quanti anni hai?");
-
-// se il valore dell'età è maggiore di 17, allora 
-// salutiamo "Ciao xD"
-// altrimenti salutiamo "Ciao persona non capace di intendere e volere per lo stato."
+const age1 = 27;
+const age2 = 22;
 
 
+if (age1 > age2) {
 
-if (age > 17) {
-    // azioni che vengono eseguite se la condizione dell'if
-    // è vera.
+    document.getElementById("esito").innerHTML = "L'utente 1 è più grande dell'utente 2";
 
-    document.getElementById("saluto").innerHTML = "Ciao xD";
-    console.log("l'utente è maggiorenne");
+} else if (age1 < age2) {
+
+    document.getElementById("esito").innerHTML = "L'utente 1 è più piccolo dell'utente 2";
 
 } else {
-    // azioni che vengono eseguite se la condizione dell'if
-    // è falsa.
 
-    document.getElementById("saluto").innerHTML = "Ciao persona non capace di intendere e volere per lo stato.";
+    document.getElementById("esito").innerHTML = "L'utente 1 ha la stessa età dell'utente 2";
 
-    console.log("l'utente non è maggiorenne");
 }
 
+console.log("finito")
